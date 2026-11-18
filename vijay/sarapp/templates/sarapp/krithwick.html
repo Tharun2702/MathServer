@@ -1,0 +1,24 @@
+<html>
+<head>
+     <title>Churn rate calculator</title>
+</head>
+<body>
+    <h1 align="center">Calculate churn Rate</h1>
+    <h2 align="center">Tharun R(26016280)</h2>
+     <form method="POST">
+    {% csrf_token %}
+
+    <label>InitCust:</label>
+    <input type="text" name="Initcust" value="{{T}}"><br><br>
+
+    <label>CustLost:</label>
+    <input type="text" name="Custlost" value="{{S}}"><br><br>
+
+    <input type="submit" value="Calculate"><br><br>
+
+    <label>Churn Rate:</label>
+    <input type="text" value="{{rate}}"><br><br>
+</form>
+</body>
+</html>
+
